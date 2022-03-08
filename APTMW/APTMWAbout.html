@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #E08822;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="C:\OneDrive\OneDrive - The Grammar School at Leeds\004972\Year 8\Computing - Mr Arthur\HTML\APTMW.html">Home</a>
+  <a class="active" href="C:\OneDrive\OneDrive - The Grammar School at Leeds\004972\Year 8\Computing - Mr Arthur\HTML\APTMWAbout.html">About</a>
+  <a href="C:\OneDrive\OneDrive - The Grammar School at Leeds\004972\Year 8\Computing - Mr Arthur\HTML\APTMWContacts.html">Contact</a>
+  <a href="C:\OneDrive\OneDrive - The Grammar School at Leeds\004972\Year 8\Computing - Mr Arthur\HTML\APTMWLinks.html">Links</a>
+  
+</div>
+
+<div style="padding-left:16px">
+<h2> About the Author</h2>
+<p>Ara Madhani (kyanzo is his online name) was the mastermind behind this genius website</p>
+<h2>The quote that inspired his website</h2>
+<p>If you are bored at home, create a random website for your Classmates to enjoy - Sun Tzu, Art of War</p>
+	<head>
+		<script type="text/javascript" language="JavaScript">
+		var picture = 0;
+		var list = ["bread cat.jpg", "lickylicky.jpg", "curious cat.jpg"  ];
+		var heading = ["Bread cat", "Cat licking mouth", "Cat fanart"];
+		var description = ["Bread, delicious","He's probably eaten the bread", "Terrible fanart"];
+		
+		function transform()
+		{	
+			var newThing = '<img width="50%" src='+list[picture]+' onClick="transform()"/><h1>'+heading[picture]+'</h1><p>'+description[picture]+'</p>';
+			picture += 1;
+			if (picture === list.length) {picture = 0};
+			document.getElementById('imageBox').innerHTML = newThing;
+		}
+		</script>
+	</head>
+	
+	<body>
+		<h3 id='myHeading'>To give you an idea of what goes on inside this genius's head, here are his favourite images!</h3>
+		<div id='clickthing'>
+			<div id="imageBox">Cat photos!</div>
+			<button type="button" onClick='transform()'>Click me</button>
+		</div>
+	</body>
+
+
+
+
+
+
+
+</div>
